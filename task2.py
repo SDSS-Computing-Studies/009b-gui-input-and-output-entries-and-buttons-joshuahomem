@@ -29,15 +29,16 @@ def trinomial():
     num2=e2.get()
     num2=int(num2)
     num1=int(num1)
-    x=((-1*num1)+ (math.sqrt(num1**2)-(4*1*num2)))
+    x=(-1*num1)+ (math.sqrt((num1**2)-(4*1*num2)))
     x1=x/2
-
-    y=((-1*num1)-(math.sqrt(num1**2)-(4*1*num2)))
+    ans1=x1-x1-x1
+    y=(-1*num1)- (math.sqrt((num1**2)-(4*1*num2)))
     x2=y/2
-
+    ans2=x2-x2-x2
     mlist=[]
-    mlist.append(x1)
-    mlist.append(x2)
+    mlist.append(ans1)
+    mlist.append(ans2)
+    
     print(mlist)
     out1.delete(0,END)
     out1.insert(0,mlist)
